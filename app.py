@@ -240,8 +240,51 @@ grafo = workflow.compile()
 # 5. INTERFAZ EN LA NUBE CON STREAMLIT
 # ==========================================
 st.set_page_config(page_title="BimBam Buy - Service Desk Agent", page_icon="🤖")
-st.title("🤖 BimBam Buy - Service Desk Agent")
-st.write("Agente automatizado inteligente para la gestión de solicitudes y soporte.")
+
+# Encabezado estilizado
+st.markdown(
+    """
+    <h1 style='text-align: center; color: #4CAF50;'>🤖 BimBam Buy - Service Desk Agent</h1>
+    <p style='text-align: center; font-size:18px;'>Agente automatizado inteligente para la gestión de solicitudes y soporte</p>
+    """,
+    unsafe_allow_html=True
+)
+
+# Áreas de conocimiento disponibles
+st.markdown("### 📚 Áreas de Conocimiento Disponibles")
+st.info("""
+- Garantías y políticas de devolución  
+- Tiempos de entrega y logística  
+- Métodos de pago aceptados  
+- Atención al cliente y soporte técnico  
+""")
+
+# Ejemplos de preguntas
+with st.expander("💡 Ejemplos de Preguntas que puedes hacer"):
+    st.markdown("""
+    - ¿Qué métodos de pago aceptan?  
+    - ¿Cuál es el tiempo estimado de entrega?  
+    - ¿Cómo funciona la garantía de productos electrónicos?  
+    - ¿Qué debo hacer para solicitar una devolución?  
+    """)
+
+# Explicación del triaje
+with st.expander("🧭 ¿Qué es el Triaje del Agente?"):
+    st.markdown("""
+    El **triaje** es el proceso inicial que realiza el agente para analizar tu consulta y decidir cómo atenderla.  
+    Su función es **clasificar la solicitud** según su urgencia y tipo de acción requerida.
+
+    **¿Para qué fue diseñado?**
+    - Priorizar solicitudes urgentes (ejemplo: problemas de acceso o fallas críticas).
+    - Diferenciar entre consultas simples y aquellas que requieren búsqueda en documentos (RAG).
+    - Guiar al agente hacia la acción más adecuada.
+
+    **¿Qué haría en cada caso?**
+    - 🔴 **Alta urgencia:** Escalar la solicitud o dar respuesta inmediata con pasos críticos.  
+    - 🟡 **Media urgencia:** Responder con detalle, apoyándose en políticas y documentos.  
+    - 🟢 **Baja urgencia:** Proporcionar información general o guiar al usuario hacia recursos disponibles.  
+    """)
+    
 
 if not retriever:
     st.warning("⚠️ No se encontraron archivos PDF en la carpeta './documentos'. El sistema responderá en base al triaje, pero las búsquedas de políticas detalladas (RAG) se saltarán.")
