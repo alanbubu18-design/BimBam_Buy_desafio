@@ -38,3 +38,26 @@ Opción 2: Ejecutar localmente
 3. Crea un archivo .env en la raíz del proyecto con tu API key: GOOGLE_API_KEY=tu_api_key_aqui
 4. Asegurate de tener descargada la carpeta de documentos y sus respectivos PDF's
 5. Ejecuta la aplicación:streamlit run app.py
+
+## 🌐 Evidencia de Deploy en la Nube
+
+Durante el proceso de despliegue se intentó utilizar **Oracle Cloud Infrastructure (OCI)**; sin embargo, la plataforma presentó limitaciones de capacidad en la región asignada, lo que impidió completar el deploy de manera estable.  
+
+Ante esta situación, se evaluaron alternativas y se seleccionó **Render** como solución complementaria. Render ofrece un **plan gratuito permanente**, soporte para aplicaciones Python y despliegue sencillo de proyectos con **Streamlit**, lo que permitió resolver el problema y garantizar la disponibilidad del agente en la nube.  
+
+**URL pública del servicio:**  
+[https://bimbam-buy-desafio.onrender.com](https://bimbam-buy-desafio.onrender.com)
+
+**Motivos de elección de Render:**  
+- Sustituye la función de OCI al brindar un entorno confiable para ejecutar aplicaciones en la nube.  
+- Permite visualizar **logs en tiempo real**, facilitando la depuración y validación del despliegue.  
+- Genera una **URL pública inmediata**, requisito esencial para la evidencia del proyecto.  
+- Compatible con **Streamlit**, que es el framework utilizado para la interfaz del agente.  
+- Plan gratuito sin límite de tiempo, ideal para proyectos académicos y demostrativos.  
+
+**Framework utilizado:** Streamlit  
+---
+
+## 📸 Evidencia
+Se adjunta captura de pantalla del servicio en ejecución en Render, mostrando la URL pública y los logs de despliegue exitoso, que se anexa en nuestra carpeta de evidencias.
+
