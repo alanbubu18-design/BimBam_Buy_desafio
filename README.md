@@ -36,4 +36,5 @@ Opción 2: Ejecutar localmente
    cd bimbambuy-agent
 2. Instala dependencias: pip install -r requirements.txt
 3. Crea un archivo .env en la raíz del proyecto con tu API key: GOOGLE_API_KEY=tu_api_key_aqui
-4. Ejecuta la aplicación:streamlit run app.py
+4. Asegurate de tener descargada la carpeta de documentos y sus respectivos PDF's
+5. Ejecuta la aplicación:streamlit run app.py
