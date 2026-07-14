@@ -22,12 +22,13 @@ Tecnologías y Herramientas
 - **FAISS** (vector store para RAG)
 - **Google Generative AI (Gemini)** (modelo de lenguaje)
 - **dotenv** (manejo de variables de entorno)
+- **Render (Free Tier)** (plataforma de despliegue en la nube, alternativa en vez OCI) 
 
 Instrucciones de Ejecución
 
 Opción 1: Usar la versión en la nube
 Accede directamente sin instalar nada:  
-👉 [Abrir aplicación en Streamlit Cloud](https://bimbambuydesafio-cweagv4gp3nnxpjffef3st.streamlit.app/)
+👉 [Abrir aplicación en Render](https://bimbam-buy-desafio.onrender.com)
 
 Opción 2: Ejecutar localmente
 1. Clona el repositorio:
