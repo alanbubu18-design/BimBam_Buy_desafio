@@ -1,0 +1,19 @@
+# Preguntas de prueba para el Agente Service Desk - BimBam Buy
+
+## AUTO_RESOLVER (FAQs con RAG)
+1. ¿Cuál es el tiempo estimado de entrega en zonas urbanas principales?
+2. ¿Qué métodos de pago acepta BimBam Buy?
+3. ¿Qué cubre la garantía de productos?
+4. ¿Cómo funciona el programa de afiliados?
+
+## PEDIR_INFO (mensajes imprecisos)
+5. Necesito ayuda con una política.
+6. Tengo una duda general sobre envíos.
+7. No entiendo cómo funciona el sistema de pagos.
+8. Quiero información pero no sé qué pedir.
+
+## ABRIR_TICKET (escalamiento a soporte humano)
+9. Quiero una excepción en el reembolso de mi pedido.
+10. Solicito autorización para un pago especial.
+11. Por favor, abre un ticket con soporte de logística.
+12. Necesito acceso especial para validar una orden.
