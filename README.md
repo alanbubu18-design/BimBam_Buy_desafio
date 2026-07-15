@@ -61,7 +61,7 @@ Ante esta situación, se evaluaron alternativas y se seleccionó **Render** como
 ☁️ Despliegue en Oracle Cloud Infrastructure (OCI)
 Se configuró exitosamente una instancia VM en Oracle Cloud utilizando una arquitectura AMD. Para garantizar la disponibilidad pública, se abrieron las reglas de seguridad de la subred en la consola de Oracle, se configuraron las reglas de entrada en el firewall de la máquina virtual (firewall-cmd) y se priorizó la regla en la tabla de ruteo interno de Linux (iptables), permitiendo el acceso directo al puerto 8501.
 
-URL de OCI: https://157.137.191.28:8501/
+URL de OCI: https//157.137.191.28:8501/
 
 **Framework utilizado:** Streamlit  
 ---
